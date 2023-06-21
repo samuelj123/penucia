@@ -1,0 +1,272 @@
+{
+			"name":" ",
+	"accounts": [
+		{
+			"name":"Commonwealth Checking",
+			"type": "asset",
+			"id": "commwealthchecking",
+			"category": "real",
+			"currency": "AUD"
+		},
+		{
+			"name":"Commonwealth Savings",
+			"type": "asset",
+			"id": "commwealthsavings",
+			"category": "real",
+			"currency": "AUD"
+		},
+		{
+			"name":"Commonwealth Tithe",
+			"type": "asset",
+			"id": "commwealthtithe",
+			"category": "real",
+			"currency": "AUD"
+		},
+		{
+			"name":"Axis Checking",
+			"type": "asset",
+			"id": "axischecking",
+			"category": "real",
+			"currency": "INR"
+		},
+		{
+			"name":"Axis Deposits",
+			"type": "asset",
+			"id": "axisdeposits",
+			"category": "real",
+			"currency": "INR"
+		},
+		{
+			"name":"SBI Deposits",
+			"type": "asset",
+			"id": "sbideposits",
+			"category": "real",
+			"currency": "INR"
+		},
+		{
+			"name":"SBI Checking",
+			"type": "asset",
+			"id": "sbichecking",
+			"category": "real",
+			"currency": "INR"
+		},
+
+		{
+			"name":"Electricity",
+			"type": "expense",
+			"id": "electricity",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"Car registration",
+			"type": "expense",
+			"id": "carregistration",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"Insurance",
+			"type": "expense",
+			"id": "insurance",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"Fuel",
+			"type": "expense",
+			"id": "fuel",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"Tax",
+			"type": "expense",
+			"id": "tax",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"Groceries",
+			"type": "expense",
+			"id": "groceries",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"Mobile Bill",
+			"type": "expense",
+			"id": "mobilebill",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"Internet Bill",
+			"type": "expense",
+			"id": "internetbill",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"House Rent",
+			"type": "expense",
+			"id": "houserent",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"Psych Expenditure",
+			"type": "expense",
+			"id": "psychexpenditure",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"Tithe",
+			"type": "expense",
+			"id": "tithe",
+			"category": "imaginary",
+			"currency": "AUD"
+		},
+		{
+			"name":"Elijah",
+			"type": "expense",
+			"id": "elijah",
+			"category": "imaginary",
+			"currency": "AUD"
+		}
+	],
+	"budgets": [
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Car Registration",
+			"from": "commwealthchecking",
+			"to": "carregistration",
+			"id": "carregistrationbudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Medical Insurance",
+			"from": "commwealthchecking",
+			"to": "insurance",
+			"id": "insurancebudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday",
+			"timeperiod": "2024/06/31"
+		},
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		},
+		{
+			"name": "Electricity",
+			"from": "commwealthchecking",
+			"to": "electricity",
+			"id": "electricitybudget",
+			"frequency": "weekly",
+			"amount": 30,
+			"currency": "AUD",
+			"timeoftransfer": "Monday"
+		}
+	]
+}

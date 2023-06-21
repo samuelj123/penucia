@@ -1,43 +1,43 @@
 <script lang="ts">
-	let rawdata="";
-	let dashboard=false;
-	let nope:boolean;
+	import type {Data, Controls} from "../components/FunctionBase";
+	import Dashboard from "../components/Dashboard.svelte";
 	let data:Data;
-	let string: string;
 
-	interface Data{
-		accounts: object[];
-		records: object[];
-		budgets: object[];
+	let controls:Controls = {
+		rawdata:"",
+		dashboard:false,
+		nope:false,
+		string:""
+	};
+
+	const reset = () => {
+		controls = {
+			rawdata: "",
+			dashboard:false,
+			nope:false,
+			string:""
+		}
 	}
 
 	const submitdata = () => {
-		nope = true;
-		data = JSON.parse(rawdata);
-		nope = false;
-		dashboard = true;
-		string = "data: text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+		controls.nope = true;
+		data = JSON.parse(controls.rawdata);
+		controls.nope = false;
+		controls.dashboard = true;
+		controls.string = "data: text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
 	}
 
-	const reset = () => {
-		rawdata = "";
-		dashboard = false;
-		nope = false;
-		string = "";
-	}
 </script>
-
-{#if !dashboard}
+{#if !controls.dashboard}
 	<input
 		type="text"
-		bind:value={rawdata}
+		bind:value={controls.rawdata}
 	/>
 	<button on:click={submitdata}>Submit</button>
 {:else}
-	<a href={string} download="finance.json">Download</a>
-	<button on:click={reset}>Back</button>
+	<Dashboard controls={controls} data={data} on:call-reset={reset}/>
 {/if}
-{#if nope}
+{#if controls.nope}
 	<h2>Nope</h2>
 	<button on:click={reset}>Back</button>
 {/if}
