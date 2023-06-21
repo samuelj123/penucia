@@ -1,38 +1,29 @@
-# create-svelte
+# Penucia
+A simple front-end app that tells us where we are, where we'd like to be regarding our penuciary lives. 
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## This front-end website hopes to:
+1. Catalogue information regarding finances, such as 
+	1. (Almost) every transaction from all bank accounts
+	2. Budget plans for the following year
+and display them in a visual manner, for the following goals
 
-## Creating a project
+	1. Have a clear purpose for all money.
+	2. Enable systematic money allotment, saving and spending
 
-If you're seeing this, you've probably already done this step. Congrats!
+2. Commodity Pricing
+	1. To be thought about later...
+
+## Developers' Setup
+To get this set up on your computer, do 3 things:
+
+1. Clone this onto your computer
+There are multiple ways: You'll have to figure out what's easiest/best for you. Then you cd into your program 
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
+cd penucia
+# 2. Install the dependencies
+npm install
+# 3. Start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
