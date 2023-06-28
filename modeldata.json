@@ -1,272 +1,144 @@
 {
-			"name":" ",
-	"accounts": [
-		{
-			"name":"Commonwealth Checking",
-			"type": "asset",
-			"id": "commwealthchecking",
-			"category": "real",
-			"currency": "AUD"
+	"name":" ", "accounts": [ { "name":"Commonwealth Checking", "type": "asset", "id": "commwealthchecking", "category": "real", "currency": "AUD" },
+		{ "name":"Commonwealth Savings", "type": "asset", "id": "commwealthsavings", "category": "real", "currency": "AUD"
 		},
 		{
-			"name":"Commonwealth Savings",
-			"type": "asset",
-			"id": "commwealthsavings",
-			"category": "real",
-			"currency": "AUD"
+			"name":"Commonwealth Tithe", "type": "asset", "id": "commwealthtithe", "category": "real", "currency": "AUD" },
+		{
+			"name":"Axis Checking", "type": "asset", "id": "axischecking", "category": "real", "currency": "INR" },
+		{
+			"name":"Axis Deposits", "type": "asset", "id": "axisdeposits", "category": "real", "currency": "INR" },
+		{
+			"name":"SBI Deposits", "type": "asset", "id": "sbideposits", "category": "real", "currency": "INR" },
+		{
+			"name":"SBI Checking", "type": "asset", "id": "sbichecking", "category": "real", "currency": "INR" },
+{
+			"name":"Electricity", "type": "expense", "id": "electricity", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"Car registration", "type": "expense", "id": "carregistration", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"Insurance", "type": "expense", "id": "insurance", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"Fuel", "type": "expense", "id": "fuel", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"Tax", "type": "expense", "id": "tax", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"Groceries", "type": "expense", "id": "groceries", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"Mobile Bill", "type": "expense", "id": "mobilebill", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"Internet Bill", "type": "expense", "id": "internetbill", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"House Rent", "type": "expense", "id": "houserent", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"Psych Expenditure", "type": "expense", "id": "psychexpenditure", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"Tithe", "type": "expense", "id": "tithe", "category": "imaginary", "currency": "AUD" },
+		{
+			"name":"Elijah", "type": "expense", "id": "elijah", "category": "imaginary", "currency": "AUD" }
+	], "budgets": [ {
+			"name": "Electricity", "from": "commwealthchecking", "to": "electricity", "id": "electricitybudget", "frequency": 7, "amount": 30, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
 		},
 		{
-			"name":"Commonwealth Tithe",
-			"type": "asset",
-			"id": "commwealthtithe",
-			"category": "real",
-			"currency": "AUD"
+			"name": "Car Registration", "from": "commwealthchecking", "to": "carregistration", "id": "carregistrationbudget", "frequency": 7, "amount": 16, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
 		},
 		{
-			"name":"Axis Checking",
-			"type": "asset",
-			"id": "axischecking",
-			"category": "real",
-			"currency": "INR"
+			"name": "Medical Insurance", "from": "commwealthchecking", "to": "insurance", "id": "insurancebudget", "frequency": 7, "amount": 63.46, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
 		},
 		{
-			"name":"Axis Deposits",
-			"type": "asset",
-			"id": "axisdeposits",
-			"category": "real",
-			"currency": "INR"
+			"name": "Car Fuel", "from": "commwealthchecking", "to": "carfuel", "id": "carfuelbudget", "frequency": 7, "amount": 20, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
 		},
 		{
-			"name":"SBI Deposits",
-			"type": "asset",
-			"id": "sbideposits",
-			"category": "real",
-			"currency": "INR"
+			"name": "Tax", "from": "commwealthchecking", "to": "tax", "id": "taxbudget", "frequency": 7, "amount": 359.63, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
 		},
 		{
-			"name":"SBI Checking",
-			"type": "asset",
-			"id": "sbichecking",
-			"category": "real",
-			"currency": "INR"
+			"name": "Groceries", "from": "commwealthchecking", "to": "groceries", "id": "groceriesbudget", "frequency": 7, "amount": 80, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
 		},
+		{
+			"name": "Mobile Bill", "from": "commwealthchecking", "to": "mobilebill", "id": "mobilebillbudget", "frequency": 7, "amount": 12.50, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
+		},
+		{
+			"name": "Internet Bill", "from": "commwealthchecking", "to": "internetbill", "id": "internetbillbudget", "frequency": 7, "amount": 10, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
+		},
+		{
+			"name": "House Rent", "from": "commwealthchecking", "to": "houserent", "id": "houserentbudget", "frequency": 7, "amount": 322, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
+		},
+		{
+			"name": "Psych Expenditure", "from": "commwealthchecking", "to": "psychexpenditure", "id": "psychexpenditurebudget", "frequency": 7, "amount": 20, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
+		},
+		{
+			"name": "Baby", "from": "commwealthchecking", "to": "baby", "id": "babybudget", "frequency": 7, "amount": 50, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
+		},
+		{
+			"name": "Tithe", "from": "commwealthchecking", "to": "tithe", "id": "tithebudget", "frequency": 7, "amount": 110.66, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
+		},
+		{
+			"name": "Car Repairs", "from": "commwealthchecking", "to": "carrepairs", "id": "carrepairsbudget", "frequency": 7, "amount": 0, "currency": "AUD", "timeoftransfer": "Monday", "timeperiod":{
+				"from":"2023-06-01", "to":"2024-06-31" }
+		},
+		{
+			"name": "Realigning", "from": "carrepairs", "to": "groceries", "id": "re-01", "frequency": "once", "amount": 30, "currency": "AUD", "timeperiod":{
+				"on":"2023-06-01" }
+		}
+	], "records":[ {
+			"date": "16/06/2023", "amount":11.08, "from":"commwealthchecking", "to":"Expenditure Groceries ", "currency":"AUD", "comments":"SMP*Burnett Kebab King Kingaroy04 AU" },
+		{
+			"date": "16/06/2023", "amount":40.70, "from":"commwealthchecking", "to":"Expenditure Groceries ", "currency":"AUD", "comments":"ALDI STORES - KINGAROY KINGAROY AU" },
+		{
+			"date": "16/06/2023", "amount":70.00, "from":"Asset Com Savings", "to":"commwealthchecking", "currency":"AUD", "comments":"Transfer from xx0261 CommBank app for grocery shoppi" },
+		{
+			"date": "16/06/2023", "amount":180.00, "from":"commwealthchecking", "to":"Expenditure Education ", "currency":"AUD", "comments":"Transfer To Lainie Nicholson CommBank App individual supervision" },
+		{
+			"date": "14/06/2023", "amount":120.00, "from":"commwealthchecking", "to":"Expenditure Education ", "currency":"AUD", "comments":"Transfer To Lainie Nicholson CommBank App group supervision" },
+		{
+			"date": "14/06/2023", "amount":270.00, "from":"commwealthchecking", "to":"Asset Com Savings", "currency":"AUD", "comments":"Transfer to xx3121 CommBank app" },
+		{
+			"date": "13/06/2023", "amount":321.65, "from":"commwealthchecking", "to":"Expenditure Rent ", "currency":"AUD", "comments":"Direct Debit 382220 FREEMAN ESTATES 133530811" },
+		{
+			"date": "13/06/2023", "amount":30.02, "from":"commwealthchecking", "to":"Expenditure Capital ", "currency":"AUD", "comments":"UNITED PETROLEUM PTY NANANGO AU" },
+		{
+			"date": "13/06/2023", "amount":55.00, "from":"commwealthchecking", "to":"Expenditure Tithe", "currency":"AUD", "comments":"Transfer To nanango cbc CommBank App tithe" },
+		{
+			"date": "13/06/2023", "amount":10.75, "from":"commwealthchecking", "to":"Expenditure Groceries ", "currency":"AUD", "comments":"BIG W 0279 KINGAROY AU AUS Card xx8437 Value Date: 10/06/2023" },
+		{
+			"date": "13/06/2023", "amount":2.50, "from":"commwealthchecking", "to":"Expenditure Capital ", "currency":"AUD", "comments":"CHOICE DISCOUNTS STORE KINGAROY QL AUS Card xx8437 Value Date: 10/06/2023" },
+		{
+			"date": "13/06/2023", "amount":5.75, "from":"Income Other ", "to":"commwealthchecking", "currency":"AUD", "comments":"Return BIG W 0279 KINGAROY AU AUS Card xx8437 Value Date: 10/06/2023" },
+		{
+			"date": "12/06/2023", "amount":908.32, "from":"Income Salary Esther", "to":"commwealthchecking", "currency":"AUD", "comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 4-10 June" },
+		{
+			"date": "10/06/2023", "amount":63.07, "from":"commwealthchecking", "to":"Expenditure Groceries ", "currency":"AUD", "comments":"ALDI STORES - KINGAROY KINGAROY AU" },
+		{
+			"date": "10/06/2023", "amount":9.00, "from":"commwealthchecking", "to":"Expenditure Capital ", "currency":"AUD", "comments":"ST VINCENT DE PAUL S KINGAROY AU Card xx8437" },
+		{
+			"date": "10/06/2023", "amount":468.61, "from":"commwealthchecking", "to":"Asset Com Savings", "currency":"AUD", "comments":"Transfer to xx3121 CommBank app savings" },
+		{
+			"date": "08/06/2023", "amount":63.00, "from":"commwealthchecking", "to":"Expenditure Tithe", "currency":"AUD", "comments":"Transfer To nanango cbc CommBank App tithe" },
+		{
+			"date": "08/06/2023", "amount":168.53, "from":"Income Other ", "to":"commwealthchecking", "currency":"AUD", "comments":"Direct Credit 518375 HCF 31078429" },
+		{
+			"date": "08/06/2023", "amount":290.40, "from":"commwealthchecking", "to":"Expenditure Capital ", "currency":"AUD", "comments":"UPCOVER SYDNEY NS AUS Card xx8429 Value Date: 06/06/2023" },
+		{
+			"date": "07/06/2023", "amount":330.00, "from":"commwealthchecking", "to":"Asset Com Savings", "currency":"AUD", "comments":"Transfer to xx0261 CommBank app" },
+		{
+			"date": "07/06/2023", "amount":700.00, "from":"commwealthchecking", "to":"Asset Com Savings", "currency":"AUD", "comments":"Transfer to xx3121 CommBank app" },
+		{
+			"date": "07/06/2023", "amount":6.47, "from":"commwealthchecking", "to":"Expenditure Groceries ", "currency":"AUD", "comments":"IGA NANANGO NANANGO AU Card xx8437" },
+		{
+			"date": "07/06/2023", "amount":30.00, "from":"commwealthchecking", "to":"Expenditure Capital ", "currency":"AUD", "comments":"TELSTRA PREPAID MELBOURNE AUS Card xx8437 Value Date: 06/06/2023" },
+		{
+			"date": "06/06/2023", "amount":321.65, "from":"commwealthchecking", "to":"Expenditure Rent ", "currency":"AUD", "comments":"Direct Debit 382220 FREEMAN ESTATES 133103750" }
+	] }
 
-		{
-			"name":"Electricity",
-			"type": "expense",
-			"id": "electricity",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"Car registration",
-			"type": "expense",
-			"id": "carregistration",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"Insurance",
-			"type": "expense",
-			"id": "insurance",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"Fuel",
-			"type": "expense",
-			"id": "fuel",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"Tax",
-			"type": "expense",
-			"id": "tax",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"Groceries",
-			"type": "expense",
-			"id": "groceries",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"Mobile Bill",
-			"type": "expense",
-			"id": "mobilebill",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"Internet Bill",
-			"type": "expense",
-			"id": "internetbill",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"House Rent",
-			"type": "expense",
-			"id": "houserent",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"Psych Expenditure",
-			"type": "expense",
-			"id": "psychexpenditure",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"Tithe",
-			"type": "expense",
-			"id": "tithe",
-			"category": "imaginary",
-			"currency": "AUD"
-		},
-		{
-			"name":"Elijah",
-			"type": "expense",
-			"id": "elijah",
-			"category": "imaginary",
-			"currency": "AUD"
-		}
-	],
-	"budgets": [
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Car Registration",
-			"from": "commwealthchecking",
-			"to": "carregistration",
-			"id": "carregistrationbudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Medical Insurance",
-			"from": "commwealthchecking",
-			"to": "insurance",
-			"id": "insurancebudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday",
-			"timeperiod": "2024/06/31"
-		},
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		},
-		{
-			"name": "Electricity",
-			"from": "commwealthchecking",
-			"to": "electricity",
-			"id": "electricitybudget",
-			"frequency": "weekly",
-			"amount": 30,
-			"currency": "AUD",
-			"timeoftransfer": "Monday"
-		}
-	]
-}
