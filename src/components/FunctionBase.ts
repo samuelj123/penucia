@@ -11,7 +11,7 @@ export interface Data{
 	budgets: Budget[];
 }
 
-interface Account {
+export interface Account {
 	"type": string;
 	"name": string;
 	"category": string;
@@ -45,5 +45,6 @@ export interface Record {
 
 export interface Balance {
 	"account": string,
+	"type": string,
 	"amount": number
 }

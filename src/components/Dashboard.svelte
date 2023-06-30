@@ -36,16 +36,32 @@
 			let counter = 0;
 			records.forEach(( record ) => {
 				if (asset.id == record.to) {
-					counter = counter + record.amount;
+					counter = Math.round(((counter + record.amount) + Number.EPSILON) * 100) / 100
 				} else if (asset.id == record.from) {
-					counter = counter - record.amount;
+					counter = Math.round(((counter - record.amount) + Number.EPSILON) * 100) / 100
 				} 
 			});
-			returnobject.push({"account":asset.name, "amount":counter});
+			returnobject.push({"account":asset.name, "type":asset.type, "amount":counter});
 		});
 		console.log(returnobject);
 		return returnobject;
 	};
+
+	const checkIfBalanced = (records:Record[]) => {
+		let result = 0;
+		data.accounts.forEach(( asset ) => {
+			let counter = 0;
+			records.forEach(( record ) => {
+				if (asset.id == record.to) {
+					counter = Math.round(((counter + record.amount) + Number.EPSILON) * 100) / 100
+				} else if (asset.id == record.from) {
+					counter = Math.round(((counter - record.amount) + Number.EPSILON) * 100) / 100
+				} 
+			});
+			result=Math.round(((result+counter) + Number.EPSILON) * 100) / 100;
+		});
+		return result;
+	}
 </script>
 
 
@@ -54,16 +70,21 @@
 
 <h3>List of Accounts</h3>
 {#each getBalancesOfAllAccounts(data.records) as asset}
-	<p>{asset.account}</p>
-	<p>{asset.amount}</p>
-{/each}
-	
-<h3>Regular Transactions</h3>
-{#each data.records as record}
-	<p>{record.date} {record.currency} {record.amount} {record.comments}</p>
+	<p>{asset.account} - {asset.type} {asset.amount}</p>
 {/each}
 
-<h3>Budget Transactions</h3>
-{#each Budgets(data.budgets) as budget}
-	<p>{budget.date} {budget.currency} {budget.amount} {budget.comments}</p>
+<h3>List of budgets</h3>
+{#each getBalancesOfAllAccounts(Budgets(data.budgets)) as asset}
+	<p>{asset.account} - {asset.type} {asset.amount}</p>
 {/each}
+<h3>If Balanced {checkIfBalanced(data.records)}</h3>
+
+<!-- <h3>Regular Transactions</h3> -->
+<!-- {#each data.records as record} -->
+<!-- 	<p>{record.date} {record.currency} {record.amount} {record.comments}</p> -->
+<!-- {/each} -->
+
+<!-- <h3>Budget Transactions</h3> -->
+<!-- {#each Budgets(data.budgets) as budget} -->
+<!-- 	<p>{budget.date} {budget.currency} {budget.amount} {budget.comments}</p> -->
+<!-- {/each} -->
