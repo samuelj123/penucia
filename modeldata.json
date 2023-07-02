@@ -1,5 +1,6 @@
 {
 	"name":" ",
+	"sanitycheecks":[""],
 	"accounts": [ 
 		{
 			"name":"Tithe",
@@ -180,7 +181,7 @@
 		"currency": "AUD",
 		"timeoftransfer": "Monday",
 		"timeperiod":{
-			"from":"2023-06-01",
+			"from":"2023-06-06",
 			"to":"2024-06-31" 
 		}
 		},
@@ -194,7 +195,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -208,7 +209,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -222,7 +223,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -232,11 +233,11 @@
 			"to": "tax",
 			"id": "taxbudget",
 			"frequency": 7,
-			"amount": 359.63,
+			"amount": 0,
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -250,7 +251,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -264,7 +265,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -278,7 +279,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -292,7 +293,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -306,7 +307,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -320,7 +321,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -334,7 +335,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -348,7 +349,7 @@
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -356,13 +357,13 @@
 			"name": "Esther's salary",
 			"from": "esalary",
 			"to": "commwealthchecking",
-			"id": "esthersalary",
+			"id": "esthersalarybudget",
 			"frequency": 7,
-			"amount": 982,
+			"amount": 908,
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
-				"from":"2023-06-01",
+				"from":"2023-06-06",
 				"to":"2024-06-31" 
 			}
 		},
@@ -583,7 +584,7 @@
 		{
 			"date":"06/06/2023",
 			"amount":563.51,
-			"from":"axisdeposits",
+			"from":"esalary",
 			"to":"commwealthchecking",
 			"currency": "AUD",
 			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 28 M- 3 Jun"

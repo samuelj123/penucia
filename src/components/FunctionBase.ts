@@ -48,3 +48,7 @@ export interface Balance {
 	"type": string,
 	"amount": number
 }
+
+export const currencyCalc = (num:number) => {
+	return Math.round(((num) + Number.EPSILON) * 100) / 100
+}
