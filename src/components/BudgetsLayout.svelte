@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type {Data} from './FunctionBase';
-	import { Budgets } from './Dashboard.svelte';
+	import { Budgets } from './DashboardModule.svelte';
 	export let data:Data;
 </script>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Budgets, mergeAccountBalances, getBalancesOfAllAccounts } from './Dashboard.svelte';
+	import { Budgets, mergeAccountBalances, getBalancesOfAllAccounts } from './DashboardModule.svelte';
 	import type {Data} from './FunctionBase';
 	import {currencyCalc} from'./FunctionBase';
 	export let data:Data;
