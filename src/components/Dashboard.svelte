@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from "svelte";
 	import type { Controls, Data } from "./FunctionBase";
-	import { isBudgetSensible, checkIfBalanced, Budgets } from "./DashboardModule.svelte";
+	import { isBudgetSensible, checkIfBalanced, MakeBudgetRecords } from "./DashboardModule.svelte";
 	import GeneralLayout from "./GeneralLayout.svelte";
 	import AccountsLayout from "./AccountsLayout.svelte";
 	import BudgetsLayout from "./BudgetsLayout.svelte";
@@ -38,4 +38,4 @@
 
 
 <h3>If Balanced {checkIfBalanced(data.records, data.accounts)}</h3>
-<h3>Is Budget Sensible {isBudgetSensible(Budgets(data.budgets), data.accounts)}</h3>
+<h3>Is Budget Sensible {isBudgetSensible(MakeBudgetRecords(data.budgets), data.accounts)}</h3>

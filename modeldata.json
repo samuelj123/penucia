@@ -368,16 +368,28 @@
 			}
 		},
 		{
-		"name": "Realigning",
-		"from": "carrepairs",
-		"to": "groceries",
-		"id": "re01",
-		"frequency": "once",
-		"amount": 30,
-		"currency": "AUD",
-		"timeperiod":{
-			"on":"2023-06-01" 
-		}
+			"name": "Realigning",
+			"from": "carrepairs",
+			"to": "groceries",
+			"id": "re01",
+			"frequency": "once",
+			"amount": 30,
+			"currency": "AUD",
+			"timeperiod":{
+				"on":"2023-06-01" 
+			}
+		},
+		{
+			"name": "Realigning David's Money",
+			"from": "oincome",
+			"to": "commwealthchecking",
+			"id": "re02",
+			"frequency": "once",
+			"amount": 7014,
+			"currency": "AUD",
+			"timeperiod":{
+				"on":"2023-06-05" 
+			}
 		}
 	],
 	"records":[
@@ -1276,6 +1288,78 @@
 			"from":"oincome",
 			"currency":"AUD",
 			"comments":"Interest from Tithe Account"
-		}
+		},
+		{
+			"date":"01/07/2023",
+			"amount":25.00,
+			"from":"commwealthchecking",
+			"to":"mobilebill",
+			"currency":"AUD",
+			"comments":"MED*ALDIMobile CHATSWOOD AU AUS Card xx8437 Value Date: 29/06/2023"
+		},
+		{
+			"date":"01/07/2023",
+			"amount":11.43,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"WOOLWORTHS 2565 KINGAROY AU AUS Card xx8437 Value Date: 29/06/2023"
+		},
+		{
+			"date":"01/07/2023",
+			"amount":10.00,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8429"
+		},
+		{
+			"date":"01/07/2023",
+			"amount":7.70,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8437"
+		},
+		{
+			"date":"03/07/2023",
+			"amount":2.99,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"BURNETT SUPER BAKE PTY KINGAROY AU Card xx8429"
+		},
+		{
+			"date":"03/07/2023",
+			"amount":908.32,
+			"from":"esalary",
+			"to":"commwealthchecking",
+			"currency":"AUD",
+			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 25 Jun-1July"
+		},
+		{
+			"date":"04/07/2023",
+			"amount":321.65,
+			"from":"commwealthchecking",
+			"to":"houserent",
+			"currency":"AUD",
+			"comments":"Direct Debit 382220 FREEMAN ESTATES 135043195"
+		},
+		{
+			"date":"05/07/2023",
+			"amount":55.00,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app crosswave money"
+		},
+		{
+			"date":"05/07/2023",
+			"amount":1.81,
+			"from":"commwealthchecking		",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8437"
+		},
 	]
 }

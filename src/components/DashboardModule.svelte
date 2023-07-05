@@ -2,25 +2,36 @@
 	import type { Account, Record, Budget, Balance } from "./FunctionBase";
 	import { currencyCalc } from "./FunctionBase";
 
-	export const Budgets = (budgets:Budget[]):Record[] => {
+	export const MakeBudgetRecords = (budgets:Budget[]):Record[] => {
 		let record:Record[] = [];
 		budgets.forEach((budget)=>{
-			// const tto:Date = new Date(budget.timeperiod.to);
-			const ttfrom:Date = new Date(budget.timeperiod.from);
-			const today = new Date();
-			for(var d = ttfrom; d <= today; d.setDate(d.getDate() + budget.frequency)) {
+			if (budget.timeperiod.on) {
 				record.push({
-					"date": d.toLocaleDateString(),
+					"date": new Date(budget.timeperiod.on).toLocaleDateString(),
 					"amount": budget.amount,
 					"from": budget.from,
 					"to": budget.to,
 					"currency": budget.currency,
 					"comments": "B::"+budget.name
-				})
+				});
+			} else {
+				const tto:Date = new Date(budget.timeperiod.to);
+				const ttfrom:Date = new Date(budget.timeperiod.from);
+				for(var d = ttfrom; d <= tto; d.setDate(d.getDate() + budget.frequency)) {
+					record.push({
+						"date": d.toLocaleDateString(),
+						"amount": budget.amount,
+						"from": budget.from,
+						"to": budget.to,
+						"currency": budget.currency,
+						"comments": "B::"+budget.name
+					})
+				}
 			}
 		});
 		return record;
 	}
+
 
 	export const mergeAccountBalances = (obj1:Balance[],obj2:Balance[]) => {
 		let mergedObjects=[];
@@ -76,5 +87,21 @@
 		else {
 			return checking.amount>=0
 		}
+	}
+
+	export const IncomeVsExpenses = (bal:Balance[]):number => {
+		let income = 0;
+		let expenses = 0;
+		bal.forEach(bal => {
+			bal.type=="income"?income+=currencyCalc(bal.amount):0;
+			bal.type=="expense"?expenses+=currencyCalc(bal.amount):0;
+		});
+		return currencyCalc(income+expenses);
+	}
+
+	export const SevenDaysAgo = (rec:any) => {
+		let sdago = new Date();
+		sdago.setDate(sdago.getDate() - 7);
+		return new Date(rec.date) <= new Date() && sdago <=new Date(rec.date);
 	}
 </script>
