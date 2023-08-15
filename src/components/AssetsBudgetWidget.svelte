@@ -10,9 +10,6 @@
 	export let data:Data;
 
 	// Variables For Widget
-	const assets:Balance[] = 
-		getBalancesOfAllAccounts(data.records, data.accounts)
-		.filter(asset => asset.type =="expense"); 
 
 	const budgetBalancesTillToday:Balance[] = 
 		getBalancesOfAllAccounts(
@@ -20,12 +17,12 @@
 			.filter( bal => new Date(bal.date)<=new Date())
 			,data.accounts);
 	
-	const currentCashFlowTillToday:Balance[] = 
+	const cashFlowFromBeginning:Balance[] = 
 		getBalancesOfAllAccounts(data.records, data.accounts);
 
 	export const totalspendableamount = currencyCalc(
 			IncomeVsExpenses(budgetBalancesTillToday) - 
-				IncomeVsExpenses(currentCashFlowTillToday)
+				IncomeVsExpenses(cashFlowFromBeginning)
 		);
 
 	const CashflowForThisWeek:Balance[] = 
@@ -33,19 +30,25 @@
 		data.records.filter(rec => SevenDaysAgo(rec)),
 		data.accounts);
 
-	console.log(CashflowForThisWeek);
 	const BudgetedFlowThisWeek:Balance[] = 
 	getBalancesOfAllAccounts(
 			MakeBudgetRecords(data.budgets)
 			.filter(rec => SevenDaysAgo(rec)),
 		data.accounts);
 
-	console.log(data.records.filter(x => new Date(x.date)<=new Date()));
+	const commwealthCheckingBal = 
+	cashFlowFromBeginning.filter(c => c.account=="commwealthchecking")[0].amount;
+
+	const weeklySpendableAmount = currencyCalc(
+		IncomeVsExpenses(BudgetedFlowThisWeek) - 
+		IncomeVsExpenses(CashflowForThisWeek)
+	);
 </script>
 
 <h3>Current Status</h3>
+<h2>Commonwealth Checking Balance: {commwealthCheckingBal}</h2>
 <p>Budget Balances Till Today = {IncomeVsExpenses(budgetBalancesTillToday)} AUD</p>
-<p>Current Cash Flow Till Today = {IncomeVsExpenses(currentCashFlowTillToday)} AUD</p>
+<p>Current Cash Flow Till Today = {IncomeVsExpenses(cashFlowFromBeginning)} AUD</p>
 <p>This Week's Budgeted Flow = {IncomeVsExpenses(BudgetedFlowThisWeek)} AUD</p>
 <p>This Week's Cash Flow = {IncomeVsExpenses(CashflowForThisWeek)} AUD</p>
 {#if totalspendableamount>=0}
@@ -54,7 +57,8 @@
 	<p>You are {totalspendableamount} AUD over-budget!</p>
 {/if}
 
-<p>{IncomeVsExpenses(assets)}</p>
-<!-- {#each assets as asset } -->
-<!-- 	<p>{asset.account} = {asset.amount}</p> -->
-<!-- {/each} -->
+{#if weeklySpendableAmount>=0}
+	<p>You have {weeklySpendableAmount} AUD to spend for this week</p>
+{:else}
+	<p>You are {weeklySpendableAmount} AUD over-budget this week!</p>
+{/if}

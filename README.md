@@ -32,93 +32,10 @@ npm run dev -- --open
 
 
 # brainstorming area 
-### (not important! just my thoughts someplace)
-- How budget may work
-	- put down future transactions that could happen
-- Data that we need to see
-	- how much money do I have to spend?
+## Things needed for Dashboard
+1. Bank Account numbers: For a sanity-check
+2. Amount left to spend this week
+3. Amount unused from different piles overall
+4. Future expenses(budget records)
 
-(eg) 
-weekly income = 100 apr-dec 2023
-weekly groceries = 30 apr-dec 2023
-monthly electricity bill = 80 apr-dec 2023
-weekly tithe = 10 apr-dec 2023
-weekly capital = 40 apr-dec 2023
-
-----
-apr week one
-income = 100
-groceries = 30
-electricity = 20
-tithe = 10
-capital = 40
-
-spent
-groceries 20
-electricity 0 
-tithe 10
-capital 30
----
-end of week one saved 10 on groceries, 30 on electricity
----
-apr week two 
-income = 100
-groceries = 30
-electricity = 20
-tithe = 10
-capital = 40
-
-spent
-groceries 20
-electricity 0 
-tithe 10
-capital 30
----
- 
-apr week three 
-income = 100
-groceries = 30
-electricity = 20
-tithe = 10
-capital = 40
-
-spent
-groceries 20
-electricity 0 
-tithe 10
-capital 30
----
-
-apr week four
-income = 100
-groceries = 30
-electricity = 20
-tithe = 10
-capital = 40
-
-spent
-groceries 20
-electricity 0 
-tithe 10
-capital 30
----
-
-week 5
-income = 100 
-groceries = 30
-electricity = 20
-tithe = 10
-capital = 40
-
-amount left to spend 
-groceries=(30*4) - (20*4) = 40 + 30 = 70
-electricity = (20*4) = 80 + 20 = 100
-tithe = 10*4 - 10*4 = 0 + 10 = 19
-capital = 30*4 - 40*4 = 120 - 160 = -40 +30 = -10
-
-now if i move the money from my surplus in groceries to capital, just to balance things out, how will I work that out?
-
-1. I'll have to re-adjust the budget for one day to spend $10 less groceries and $10 more on capital
-2. I could just in the budget area, add a one-time budget transaction from groceries to capital
-3. 
-
+# Budget filter off frequency once first

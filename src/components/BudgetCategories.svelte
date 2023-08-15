@@ -1,19 +1,24 @@
 <script lang="ts">
-	import { MakeBudgetRecords, getBalancesOfAllAccounts, mergeAccountBalances } from "./DashboardModule.svelte";
+	import { 
+		MakeBudgetRecords,
+		getBalancesOfAllAccounts,
+		mergeAccountBalances 
+	} from "./DashboardModule.svelte";
 	import type { Balance, Data } from "./FunctionBase";
 	export let data:Data;
 
 	const budgetBalancesTillToday:Balance[] = 
-		getBalancesOfAllAccounts(
-			MakeBudgetRecords(data.budgets)
+	getBalancesOfAllAccounts(
+		MakeBudgetRecords(data.budgets)
 			.filter( bal => new Date(bal.date)<=new Date())
-			,data.accounts);
+		,data.accounts);
 
 	const currentCashFlowTillToday:Balance[] = 
-		getBalancesOfAllAccounts(data.records, data.accounts);
+	getBalancesOfAllAccounts(data.records, data.accounts);
 
 	const comparison = 
-	mergeAccountBalances(budgetBalancesTillToday,currentCashFlowTillToday);
+	mergeAccountBalances(budgetBalancesTillToday,currentCashFlowTillToday)
+	.filter(c => c.type=="expense");
 
 
 </script>

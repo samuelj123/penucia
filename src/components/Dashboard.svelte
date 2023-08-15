@@ -28,6 +28,8 @@
 </nav>
 
 
+<h3>If Balanced {checkIfBalanced(data.records, data.accounts)}</h3>
+<h3>Is Budget Sensible {isBudgetSensible(MakeBudgetRecords(data.budgets), data.accounts)}</h3>
 {#if toggle==="dashboard"}
 	<GeneralLayout data={data} />
 	{:else if toggle === "accounts"} 
@@ -35,7 +37,3 @@
 	{:else if toggle === "budgets"} 
 	<BudgetsLayout data={data}/>
 {/if}
-
-
-<h3>If Balanced {checkIfBalanced(data.records, data.accounts)}</h3>
-<h3>Is Budget Sensible {isBudgetSensible(MakeBudgetRecords(data.budgets), data.accounts)}</h3>

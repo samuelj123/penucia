@@ -57,7 +57,7 @@
 					counter = currencyCalc(counter - record.amount);
 				} 
 			});
-			returnobject.push({"account":asset.name, "type":asset.type, "amount":counter});
+			returnobject.push({"account":asset.id, "type":asset.type, "amount":counter});
 		});
 		return returnobject;
 	};
@@ -80,7 +80,7 @@
 
 	export const isBudgetSensible = (budgetrecs:Record[], accounts:Account[]) => {
 		const balances = getBalancesOfAllAccounts(budgetrecs,accounts);
-		const checking:Balance|string = balances.find(bal => bal.account == "Commonwealth Checking")||"Not Found";
+		const checking:Balance|string = balances.find(bal => bal.account == "commwealthchecking")||"Not Found";
 		if (typeof(checking)=='string'){
 			return false
 		} 
@@ -99,9 +99,9 @@
 		return currencyCalc(income+expenses);
 	}
 
-	export const SevenDaysAgo = (rec:any) => {
+	export const SevenDaysAgo = (rec:Record) => {
 		let sdago = new Date();
 		sdago.setDate(sdago.getDate() - 7);
-		return new Date(rec.date) <= new Date() && sdago <=new Date(rec.date);
+		return sdago <=new Date(rec.date) && new Date(rec.date) <= new Date();
 	}
 </script>

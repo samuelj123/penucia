@@ -1,0 +1,25 @@
+{
+	"date":"06/07/2023",
+	"amount":-35.00,
+	"from":"commwealthchecking",
+	"to":"mobilebill",
+	"currency":"AUD",
+	"comments":"TELSTRA PREPAID MELBOURNE AUS Card xx8437 Value Date: 05/07/2023"
+},
+{
+	"date":"06/07/2023",
+	"amount":-2.64,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"IGA NANANGO NANANGO AU Card xx8429"
+},
+{
+	"date":"07/07/2023",
+	"amount":-180.00,
+	"from":"commwealthchecking",
+	"to":"psychexpenditure",
+	"currency":"AUD",
+	"comments":"Transfer To Lainie Nicholson CommBank App supervision"
+},
+%s/\(.\{-}\)\t\(.\{-}\)\t\(.\{-}\)\t\(.\{-}\)\t\(.\{-}\)\t\(.\{-}\)\t\(.\{-}\)\t\(.*\)/{\r\t"date":"\1",\r\t"amount":\2,\r\t"from":"\8",\r\t"to":"\7",\r\t"currency":"AUD",\r\t"comments":"\3"\r},
