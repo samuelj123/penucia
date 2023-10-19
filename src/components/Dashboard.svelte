@@ -19,15 +19,15 @@
 
 </script>
 
-<nav>
+<sidebar>
 	<button on:click={Toggleaccounts}>Accounts</button>
 	<button on:click={Togglebudgets}>Budgets</button>
 	<button on:click={Toggledashboard}>Dashboard</button>
-	<a href={controls.string} download="finance.json">Download</a>
+	<a href={controls.rawdata} download="finance.json">Download</a>
 	<button on:click={reset}>Exit</button>
-</nav>
+</sidebar>
 
-
+<main>
 <h3>If Balanced {checkIfBalanced(data.records, data.accounts)}</h3>
 <h3>Is Budget Sensible {isBudgetSensible(MakeBudgetRecords(data.budgets), data.accounts)}</h3>
 {#if toggle==="dashboard"}
@@ -37,3 +37,34 @@
 	{:else if toggle === "budgets"} 
 	<BudgetsLayout data={data}/>
 {/if}
+</main>
+
+<!-- <style> -->
+<!-- 	sidebar { -->
+<!-- 		min-height: 100vh; -->
+<!-- 		position: fixed; -->
+<!-- 		top: 0; -->
+<!-- 		left: 0; -->
+<!-- 		width: clamp(20px, 5vw, 50px); -->
+<!-- 		border: 1px solid red; -->
+<!-- 	} -->
+<!-- 	main { -->
+<!-- 		margin-left: clamp(25px, 6vw, 60px); -->
+<!-- 	} -->
+<!---->
+<!-- 	sidebar button, sidebar a { -->
+<!-- 		justify-self: center; -->
+<!-- 		width: clamp( 15px, 4.5vw, 40px); -->
+<!-- 		height: clamp( 15px, 4.5vw, 40px); -->
+<!-- 		text-decoration: none; -->
+<!-- 		display: block; -->
+<!-- 		border: none; -->
+<!-- 		font-family: arial; -->
+<!-- 		font-size: 1em; -->
+<!-- 		color: black; -->
+<!-- 		padding: 0; -->
+<!-- 		margin: 0; -->
+<!-- 		border: 1px solid red; -->
+<!-- 		background: none; -->
+<!-- 	} -->
+<!-- </style> -->

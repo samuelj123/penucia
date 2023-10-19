@@ -2,7 +2,6 @@ export interface Controls {
 		rawdata: string;
 		dashboard: boolean;
 		nope: boolean;
-		string: string;
 	}
 
 export interface Data{
