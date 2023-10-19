@@ -15,9 +15,12 @@
 					"comments": "B::"+budget.name
 				});
 			} else {
-				const tto:Date = new Date(budget.timeperiod.to);
+				const budgetenddate:Date = new Date(budget.timeperiod.to);
+				const today = new Date();
+				const recordenddate = budgetenddate>today?today:budgetenddate;
+
 				const ttfrom:Date = new Date(budget.timeperiod.from);
-				for(var d = ttfrom; d <= tto; d.setDate(d.getDate() + budget.frequency)) {
+				for(var d = ttfrom; d <= recordenddate; d.setDate(d.getDate() + budget.frequency)) {
 					record.push({
 						"date": d.toLocaleDateString(),
 						"amount": budget.amount,
@@ -36,7 +39,7 @@
 	export const mergeAccountBalances = (obj1:Balance[],obj2:Balance[]) => {
 		let mergedObjects=[];
 		for (const obj of obj1) {
-			const mergedObj = {"account":obj.account,"type":obj.type,"amount1":obj.amount,"amount2":0}
+			const mergedObj = {"currency": obj.currency, "account":obj.accountname,"type":obj.type,"amount1":obj.amount,"amount2":0}
 			const matchObj = obj2.find(o => o.account ===obj.account);
 			if(matchObj) {
 				mergedObj.amount2=matchObj.amount;
@@ -57,7 +60,7 @@
 					counter = currencyCalc(counter - record.amount);
 				} 
 			});
-			returnobject.push({"account":asset.id, "type":asset.type, "amount":counter});
+			returnobject.push({"account":asset.id, "accountname":asset.name, "currency":asset.currency, "type":asset.type, "amount":counter});
 		});
 		return returnobject;
 	};

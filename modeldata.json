@@ -162,6 +162,13 @@
 			"id": "elijah",
 			"category": "real",
 			"currency": "AUD" 
+		},
+		{
+			"name":"Entertainment",
+			"type": "expense",
+			"id": "eentertainment",
+			"category": "real",
+			"currency": "AUD" 
 		}
 	],
 	"budgets": [ {
@@ -296,7 +303,7 @@
 			"to": "psychexpenditure",
 			"id": "psychexpenditurebudget",
 			"frequency": 7,
-			"amount": 20,
+			"amount": 180,
 			"currency": "AUD",
 			"timeoftransfer": "Monday",
 			"timeperiod":{
@@ -1377,6 +1384,1238 @@
 			"to":"psychexpenditure",
 			"currency":"AUD",
 			"comments":"Transfer To Lainie Nicholson CommBank App supervision"
-		}
-	]
+		},
+		{
+			"date":"08/07/2023",
+			"amount":85.66,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"ALDI STORES - KINGAROY KINGAROY AU"
+		},
+		{
+			"date":"08/07/2023",
+			"amount":4.00,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Lifeline Retail - Ki Kingaroy AU"
+		},
+		{
+			"date":"09/07/2023",
+			"amount":50.09,
+			"from":"commwealthchecking",
+			"to":"fuel",
+			"currency":"AUD",
+			"comments":"UNITED PETROLEUM PTY NANANGO AU"
+		},
+		{
+			"date":"10/07/2023",
+			"amount":55.00,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Transfer To nanango cbc CommBank App tithe"
+		},
+		{
+			"date":"10/07/2023",
+			"amount":172.00,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx3121 CommBank app"
+		},
+		{
+			"date":"10/07/2023",
+			"amount":7.00,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8429"
+		},
+		{
+			"date":"10/07/2023",
+			"amount":924.02,
+			"from":"esalary",
+			"to":"commwealthchecking",
+			"currency":"AUD",
+			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 2-8 July"
+		},
+		{
+			"date":"10/07/2023",
+			"amount":56.60,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Transfer To nanango cbc CommBank App tithe"
+		},
+		{
+			"date":"10/07/2023",
+			"amount":56.60,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app tithe for crosswav"
+		},
+		{
+			"date":"11/07/2023",
+			"amount":17.19,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"WOOLWORTHS 2565 KINGAROY AU AUS Card xx8437 Value Date: 08/07/2023"
+		},
+		{
+			"date":"11/07/2023",
+			"amount":321.65,
+			"from":"commwealthchecking",
+			"to":"houserent",
+			"currency":"AUD",
+			"comments":"Direct Debit 382220 FREEMAN ESTATES 135445760"
+		},
+		{
+			"date":"15/07/2023",
+			"amount":84.79,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"ALDI STORES - KINGAROY KINGAROY AU"
+		},
+		{
+			"date":"17/07/2023",
+			"amount":180.00,
+			"from":"commwealthchecking",
+			"to":"psychexpenditure",
+			"currency":"AUD",
+			"comments":"Transfer To Lainie Nicholson CommBank App supervision"
+		},
+		{
+			"date":"17/07/2023",
+			"amount":120.00,
+			"from":"commwealthchecking",
+			"to":"psychexpenditure",
+			"currency":"AUD",
+			"comments":"Transfer To Lainie Nicholson CommBank App group supervision"
+		},
+		{
+			"date":"17/07/2023",
+			"amount":924.02,
+			"from":"esalary",
+			"to":"commwealthchecking",
+			"currency":"AUD",
+			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 9-15 July"
+		},
+		{
+			"date":"17/07/2023",
+			"amount":56.00,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Transfer To nanango cbc CommBank App tithe"
+		},
+		{
+			"date":"17/07/2023",
+			"amount":56.00,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app tithe"
+		},
+		{
+			"date":"18/07/2023",
+			"amount":17.70,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"WOOLWORTHS 2565 KINGAROY AU AUS Card xx8437 Value Date: 15/07/2023"
+		},
+		{
+			"date":"18/07/2023",
+			"amount":14.00,
+			"from":"commwealthchecking",
+			"to":"eentertainment",
+			"currency":"AUD",
+			"comments":"Reds Fish and Chips N NANANGO QL AUS Card xx8437 Value Date: 14/07/2023"
+		},
+		{
+			"date":"18/07/2023",
+			"amount":321.65,
+			"from":"commwealthchecking",
+			"to":"houserent",
+			"currency":"AUD",
+			"comments":"Direct Debit 382220 FREEMAN ESTATES 135878043"
+		},
+		{
+			"date":"19/07/2023",
+			"amount":50.05,
+			"from":"commwealthchecking",
+			"to":"fuel",
+			"currency":"AUD",
+			"comments":"UNITED PETROLEUM PTY NANANGO AU"
+		},
+		{
+			"date":"19/07/2023",
+			"amount":80.00,
+			"from":"commwealthchecking",
+			"to":"capital",
+			"currency":"AUD",
+			"comments":"Blackbutt Med Centre Blackbutt AU"
+		},
+		{
+			"date":"19/07/2023",
+			"amount":80.00,
+			"from":"commwealthchecking",
+			"to":"capital",
+			"currency":"AUD",
+			"comments":"Blackbutt Med Centre Blackbutt AU"
+		},
+		{
+			"date":"20/07/2023",
+			"amount":12.95,
+			"from":"commwealthchecking",
+			"to":"capital",
+			"currency":"AUD",
+			"comments":"NANANGO PHARMACY NOM NANANGO AUS Card xx8437 Value Date: 18/07/2023"
+		},
+		{
+			"date":"22/07/2023",
+			"amount":80.00,
+			"from":"commwealthchecking",
+			"to":"capital",
+			"currency":"AUD",
+			"comments":"SQ *BLACKBUTT MEDICAL Blackbutt QL AUS Card xx8429 Value Date: 20/07/2023"
+		},
+		{
+			"date":"22/07/2023",
+			"amount":21.50,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8437"
+		},
+		{
+			"date":"24/07/2023",
+			"amount":924.02,
+			"from":"esalary",
+			"to":"commwealthchecking",
+			"currency":"AUD",
+			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 16-22 July"
+		},
+		{
+			"date":"24/07/2023",
+			"amount":56.60,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Transfer To nanango cbc CommBank App tithe"
+		},
+		{
+			"date":"24/07/2023",
+			"amount":56.60,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app"
+		},
+		{
+			"date":"25/07/2023",
+			"amount":25.00,
+			"from":"commwealthchecking",
+			"to":"mobilebill",
+			"currency":"AUD",
+			"comments":"MED*ALDIMobile CHATSWOOD AU AUS Card xx8437 Value Date: 21/07/2023"
+		},
+		{
+			"date":"25/07/2023",
+			"amount":321.65,
+			"from":"commwealthchecking",
+			"to":"houserent",
+			"currency":"AUD",
+			"comments":"Direct Debit 382220 FREEMAN ESTATES 136305551"
+		},
+		{
+			"date":"26/07/2023",
+			"amount":2.10,
+			"from":"commwealthchecking",
+			"to":"capital",
+			"currency":"AUD",
+			"comments":"BOOTS N BULLDUST INC KINGAROY AU AUS Card xx8429 Value Date: 24/07/2023"
+		},
+		{
+			"date":"26/07/2023",
+			"amount":80.00,
+			"from":"commwealthchecking",
+			"to":"capital",
+			"currency":"AUD",
+			"comments":"Blackbutt Med Centre Blackbutt AU"
+		},
+		{
+			"date":"26/07/2023",
+			"amount":10.93,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8429"
+		},
+		{
+			"date":"27/07/2023",
+			"amount":11.24,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8429"
+		},
+		{
+			"date":"28/07/2023",
+			"amount":12.00,
+			"from":"commwealthchecking",
+			"to":"mobilebill",
+			"currency":"AUD",
+			"comments":"TELSTRA PREPAID MELBOURNE AUS Card xx8437 Value Date: 27/07/2023"
+		},
+		{
+			"date":"29/07/2023",
+			"amount":234.80,
+			"from":"commwealthchecking",
+			"to":"internetbill",
+			"currency":"AUD",
+			"comments":"TANGERINE TELECOM SOUTH MELBOUR AU AUS Card xx8437 Value Date: 27/07/2023"
+		},
+		{
+			"date":"30/07/2023",
+			"amount":41.52,
+			"from":"commwealthchecking",
+			"to":"fuel",
+			"currency":"AUD",
+			"comments":"UNITED PETROLEUM PTY NANANGO AU"
+		},
+		{
+			"date":"30/07/2023",
+			"amount":4.00,
+			"from":"commwealthchecking",
+			"to":"capital",
+			"currency":"AUD",
+			"comments":"ST VINCENT DE PAUL S KINGAROY AU Card xx8437"
+		},
+		{
+			"date":"30/07/2023",
+			"amount":4.77,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"KINGAROY SUPERMARKET P KINGAROY AU Card xx8437"
+		},
+		{
+			"date":"31/07/2023",
+			"amount":924.02,
+			"from":"esalary",
+			"to":"commwealthchecking",
+			"currency":"AUD",
+			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 23 -29 July"
+		},
+		{
+			"date":"01/08/2023",
+			"amount":321.65,
+			"from":"commwealthchecking",
+			"to":"houserent",
+			"currency":"AUD",
+			"comments":"Direct Debit 382220 FREEMAN ESTATES 136793570"
+		},
+		{
+			"date":"02/08/2023",
+			"amount":56.60,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app for crosswave"
+		},
+		{
+			"date":"03/08/2023",
+			"amount":21.76,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"KINGAROY SUPERMARKET P KINGAROY AU Card xx8437"
+		},
+		{
+			"date":"03/08/2023",
+			"amount":47.77,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"ALDI STORES - KINGAROY KINGAROY AU"
+		},
+		{
+			"date":"05/08/2023",
+			"amount":56.60,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Transfer To nanango cbc CommBank App tithe"
+		},
+		{
+			"date":"07/08/2023",
+			"amount":924.02,
+			"from":"esalary",
+			"to":"commwealthchecking",
+			"currency":"AUD",
+			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 30J - 5Aug"
+		},
+		{
+			"date":"08/08/2023",
+			"amount":68.87,
+			"from":"commwealthchecking",
+			"to":"fuel",
+			"currency":"AUD",
+			"comments":"UNITED PETROLEUM PTY NANANGO AU"
+		},
+		{
+			"date":"08/08/2023",
+			"amount":321.65,
+			"from":"commwealthchecking",
+			"to":"houserent",
+			"currency":"AUD",
+			"comments":"Direct Debit 382220 FREEMAN ESTATES 137270322"
+		},
+		{
+			"date":"09/08/2023",
+			"amount":56.60,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app tithe"
+		},
+		{
+			"date":"09/08/2023",
+			"amount":56.00,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Transfer To nanango cbc CommBank App tithe"
+		},
+		{
+			"date":"11/08/2023",
+			"amount":45.44,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"ALDI STORES - KINGAROY KINGAROY AU"
+		},
+		{
+			"date":"14/08/2023",
+			"amount":924.02,
+			"from":"esalary",
+			"to":"commwealthchecking",
+			"currency":"AUD",
+			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 6-12 Aug"
+		},
+		{
+			"date":"15/08/2023",
+			"amount":56.60,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app for crosswave"
+		},
+		{
+			"date":"15/08/2023",
+			"amount":321.65,
+			"from":"commwealthchecking",
+			"to":"houserent",
+			"currency":"AUD",
+			"comments":"Direct Debit 382220 FREEMAN ESTATES 137704913"
+		},
+		{
+			"date":"16/08/2023",
+			"amount":56.00,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Transfer To nanango cbc CommBank App tithe"
+		},
+		{
+			"date":"16/08/2023",
+			"amount":20.23,
+			"from":"commwealthchecking",
+			"to":"eentertainment",
+			"currency":"AUD",
+			"comments":"SMP*Burnett Kebab Ki Kingaroy AU AUS Card xx8437 Value Date: 11/08/2023"
+		},
+		{
+			"date":"16/08/2023",
+			"amount":36.20,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"WOOLWORTHS 2565 KINGAROY AU AUS Card xx8437 Value Date: 11/08/2023"
+		},
+		{
+			"date":"19/08/2023",
+			"amount":41.67,
+"from":"commwealthchecking",
+"to":"groceries",
+"currency":"AUD",
+			"comments":"ALDI STORES - KINGAROY KINGAROY AU"
+		},
+		{
+			"date":"21/08/2023",
+			"amount":56.60,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app for crosswave"
+		},
+		{
+			"date":"21/08/2023",
+			"amount":924.02,
+			"from":"esalary",
+			"to":"commwealthchecking",
+			"currency":"AUD",
+			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 13-19 Aug"
+		},
+		{
+			"date":"21/08/2023",
+			"amount":6.38,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8437"
+		},
+		{
+			"date":"21/08/2023",
+			"amount":67.61,
+			"from":"commwealthchecking",
+			"to":"fuel",
+			"currency":"AUD",
+			"comments":"UNITED PETROLEUM PTY NANANGO AU"
+		},
+		{
+			"date":"22/08/2023",
+			"amount":24.40,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"WOOLWORTHS 2565 KINGAROY AU AUS Card xx8437 Value Date: 19/08/2023"
+		},
+		{
+			"date":"22/08/2023",
+			"amount":321.65,
+			"from":"commwealthchecking",
+			"to":"houserent",
+			"currency":"AUD",
+			"comments":"Direct Debit 382220 FREEMAN ESTATES 138141211"
+		},
+		{
+			"date":"24/08/2023",
+			"amount":25.00,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"MED*ALDIMobile CHATSWOOD AU AUS Card xx8437 Value Date: 22/08/2023"
+		},
+		{
+			"date":"25/08/2023",
+			"amount":180.00,
+			"from":"commwealthchecking",
+			"to":"psychexpenditure",
+			"currency":"AUD",
+			"comments":"Transfer To Lainie Nicholson CommBank App supervision"
+		},
+		{
+			"date":"25/08/2023",
+			"amount":132.30,
+			"from":"commwealthchecking",
+			"to":"capital",
+			"currency":"AUD",
+			"comments":"MICHAELS COMPUTER SE NANANGO AU Card xx8437"
+		},
+		{
+			"date":"26/08/2023",
+			"amount":56.00,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Transfer To nanango cbc CommBank App tithe"
+		},
+		{
+			"date":"26/08/2023",
+			"amount":56.60,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app crosswave"
+		},
+		{
+			"date":"27/08/2023",
+			"amount":9.00,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8437"
+		},
+		{
+			"date":"27/08/2023",
+			"amount":18.75,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8437"
+		},
+		{
+			"date":"28/08/2023",
+			"amount":924.02,
+			"from":"esalary",
+			"to":"commwealthchecking",
+			"currency":"AUD",
+			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 20-26 Aug"
+		},
+		{
+			"date":"29/08/2023",
+			"amount":24.00,
+			"from":"commwealthchecking",
+			"to":"eentertainment",
+			"currency":"AUD",
+			"comments":"Reds Fish and Chips N NANANGO QL AUS Card xx8429 Value Date: 25/08/2023"
+		},
+		{
+			"date":"29/08/2023",
+			"amount":207.07,
+			"from":"commwealthchecking",
+			"to":"electricity",
+			"currency":"AUD",
+			"comments":"ERGON ENERGY QUEENSL BRISBANE AUS Card xx8437 Value Date: 26/08/2023"
+		},
+		{
+			"date":"29/08/2023",
+			"amount":57.00,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Transfer To nanango cbc CommBank App tithe"
+		},
+		{
+			"date":"29/08/2023",
+			"amount":56.00,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app"
+		},
+		{
+			"date":"29/08/2023",
+			"amount":1500.00,
+			"from":"commwealthchecking",
+			"to":"commwealthsavings",
+			"currency":"AUD",
+			"comments":"Transfer to xx3121 CommBank app savings"
+		},
+		{
+			"date":"29/08/2023",
+			"amount":321.65,
+			"from":"commwealthchecking",
+			"to":"houserent",
+			"currency":"AUD",
+			"comments":"Direct Debit 382220 FREEMAN ESTATES 138589383"
+		},
+		{
+			"date":"31/08/2023",
+			"amount":25.00,
+			"from":"commwealthchecking",
+			"to":"mobilebill",
+			"currency":"AUD",
+			"comments":"MED*ALDIMobile CHATSWOOD AU AUS Card xx8437 Value Date: 29/08/2023"
+		},
+		{
+			"date":"02/09/2023",
+			"amount":68.98,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"ALDI STORES - KINGAROY KINGAROY AU"
+		},
+		{
+			"date":"04/09/2023",
+			"amount":1612.02,
+			"from":"esalary",
+			"to":"commwealthchecking",
+			"currency":"AUD",
+			"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 27 A-2 Sep"
+		},
+		{
+			"date":"05/09/2023",
+			"amount":18.96,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"WOOLWORTHS 2565 KINGAROY AU AUS Card xx8437 Value Date: 02/09/2023"
+		},
+		{
+			"date":"05/09/2023",
+			"amount":156.60,
+			"from":"commwealthchecking",
+			"to":"commwealthtithe",
+			"currency":"AUD",
+			"comments":"Transfer to xx0261 CommBank app crosswave"
+		},
+		{
+			"date":"05/09/2023",
+			"amount":56.00,
+			"from":"commwealthchecking",
+			"to":"etithe",
+			"currency":"AUD",
+			"comments":"Transfer To nanango cbc CommBank App tithe"
+		},
+		{
+			"date":"05/09/2023",
+			"amount":120.00,
+			"from":"commwealthchecking",
+			"to":"psychexpenditure",
+			"currency":"AUD",
+			"comments":"Transfer To Albert Watt PayID Phone from CommBank App supervision"
+		},
+		{
+			"date":"05/09/2023",
+			"amount":321.65,
+			"from":"commwealthchecking",
+			"to":"houserent",
+			"currency":"AUD",
+			"comments":"Direct Debit 382220 FREEMAN ESTATES 139120554"
+		},
+		{
+			"date":"06/09/2023",
+			"amount":6.60,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"IGA NANANGO NANANGO AU Card xx8429"
+		},
+		{
+			"date":"09/09/2023",
+			"amount":50.01,
+			"from":"commwealthchecking",
+			"to":"fuel",
+			"currency":"AUD",
+			"comments":"BP MURGON RH 0620 MURGON QL AUS Card xx8429 Value Date: 06/09/2023"
+		},
+		{
+			"date":"09/09/2023",
+			"amount":42.60,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+			"comments":"ALDI STORES - KINGAROY KINGAROY AU"
+		},
+		{
+			"date":"09/09/2023",
+			"amount":5.40,
+			"from":"commwealthchecking",
+			"to":"groceries",
+			"currency":"AUD",
+"comments":"IGA NANANGO NANANGO AU Card xx8437"
+},
+{
+	"date":"11/09/2023",
+	"amount":924.02,
+	"from":"esalary",
+	"to":"commwealthchecking",
+	"currency":"AUD",
+	"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 3-9 Sept"
+},
+{
+	"date":"12/09/2023",
+	"amount":45.60,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"BIG W 0279 KINGAROY AU AUS Card xx8437 Value Date: 09/09/2023"
+},
+{
+	"date":"12/09/2023",
+	"amount":16.50,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"WOOLWORTHS 2565 KINGAROY AU AUS Card xx8437 Value Date: 09/09/2023"
+},
+{
+	"date":"12/09/2023",
+	"amount":56.60,
+	"from":"commwealthchecking",
+	"to":"commwealthtithe",
+	"currency":"AUD",
+	"comments":"Transfer to xx0261 CommBank app crosswave"
+},
+{
+	"date":"12/09/2023",
+	"amount":321.65,
+	"from":"commwealthchecking",
+	"to":"houserent",
+	"currency":"AUD",
+	"comments":"Direct Debit 382220 FREEMAN ESTATES 139564827"
+},
+{
+	"date":"13/09/2023",
+	"amount":120.00,
+	"from":"commwealthchecking",
+	"to":"psychexpenditure",
+	"currency":"AUD",
+	"comments":"Transfer To Albert Watt PayID Phone from CommBank App supervision"
+},
+{
+	"date":"15/09/2023",
+	"amount":180.00,
+	"from":"commwealthchecking",
+	"to":"psychexpenditure",
+	"currency":"AUD",
+	"comments":"Transfer To Lainie Nicholson CommBank App supervision"
+},
+{
+	"date":"16/09/2023",
+	"amount":69.03,
+	"from":"commwealthchecking",
+	"to":"fuel",
+	"currency":"AUD",
+	"comments":"UNITED PETROLEUM PTY NANANGO AU"
+},
+{
+	"date":"16/09/2023",
+	"amount":3.80,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"COLES 4440 GYMPIE AU"
+},
+{
+	"date":"17/09/2023",
+	"amount":9.30,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"IGA NANANGO NANANGO AU Card xx8437"
+},
+{
+	"date":"18/09/2023",
+	"amount":924.02,
+	"from":"esalary",
+	"to":"commwealthchecking",
+	"currency":"AUD",
+	"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 10-16 Sept"
+},
+{
+	"date":"19/09/2023",
+	"amount":5.00,
+	"from":"commwealthchecking",
+	"to":"eentertainment",
+	"currency":"AUD",
+	"comments":"Gympie Fish N Chips GYMPIE QL AUS Card xx8429 Value Date: 16/09/2023"
+},
+{
+	"date":"19/09/2023",
+	"amount":55.44,
+	"from":"commwealthchecking",
+	"to":"internetbill",
+	"currency":"AUD",
+	"comments":"TANGERINE TELECOM SOUTH MELBOUR AU AUS Card xx8437 Value Date: 17/09/2023"
+},
+{
+	"date":"19/09/2023",
+	"amount":174.00,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"KMART 3329 GYMPIE AU AUS Card xx8437 Value Date: 16/09/2023"
+},
+{
+	"date":"19/09/2023",
+	"amount":110.00,
+	"from":"commwealthchecking",
+	"to":"etithe",
+	"currency":"AUD",
+	"comments":"Transfer To nanango cbc CommBank App tithe"
+},
+{
+	"date":"19/09/2023",
+	"amount":56.60,
+	"from":"commwealthchecking",
+	"to":"commwealthtithe",
+	"currency":"AUD",
+	"comments":"Transfer to xx0261 CommBank app"
+},
+{
+	"date":"19/09/2023",
+	"amount":321.65,
+	"from":"commwealthchecking",
+	"to":"houserent",
+	"currency":"AUD",
+	"comments":"Direct Debit 382220 FREEMAN ESTATES 140009865"
+},
+{
+	"date":"20/09/2023",
+	"amount":180.00,
+	"from":"commwealthchecking",
+	"to":"psychexpenditure",
+	"currency":"AUD",
+	"comments":"Transfer To Lainie Nicholson CommBank App supervision"
+},
+{
+	"date":"21/09/2023",
+	"amount":50.95,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"ALDI STORES - KINGAROY KINGAROY AU"
+},
+{
+	"date":"23/09/2023",
+	"amount":3.60,
+	"from":"commwealthchecking",
+	"to":"eentertainment",
+	"currency":"AUD",
+	"comments":"MCDONALDS DT 0471 KINGAROY QLDAU"
+},
+{
+	"date":"25/09/2023",
+	"amount":924.02,
+	"from":"esalary",
+	"to":"commwealthchecking",
+	"currency":"AUD",
+	"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 17-23 Sept"
+},
+{
+	"date":"26/09/2023",
+	"amount":23.25,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"BIG W 0279 KINGAROY AU AUS Card xx8437 Value Date: 23/09/2023"
+},
+{
+	"date":"26/09/2023",
+	"amount":6.75,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"WOOLWORTHS 2565 KINGAROY AU AUS Card xx8437 Value Date: 23/09/2023"
+},
+{
+	"date":"26/09/2023",
+	"amount":25.00,
+	"from":"commwealthchecking",
+	"to":"mobilebill",
+	"currency":"AUD",
+	"comments":"MED*ALDIMobile CHATSWOOD AU AUS Card xx8437 Value Date: 22/09/2023"
+},
+{
+	"date":"26/09/2023",
+	"amount":72.02,
+	"from":"commwealthchecking",
+	"to":"fuel",
+	"currency":"AUD",
+	"comments":"UNITED PETROLEUM PTY NANANGO AU"
+},
+{
+	"date":"26/09/2023",
+	"amount":321.65,
+	"from":"commwealthchecking",
+	"to":"houserent",
+	"currency":"AUD",
+	"comments":"Direct Debit 382220 FREEMAN ESTATES 140469102"
+},
+{
+	"date":"28/09/2023",
+	"amount":5.85,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"IGA NANANGO NANANGO AU Card xx8437"
+},
+{
+	"date":"29/09/2023",
+	"amount":56.00,
+	"from":"commwealthchecking",
+	"to":"etithe",
+	"currency":"AUD",
+	"comments":"Transfer To nanango cbc CommBank App tithe"
+},
+{
+	"date":"29/09/2023",
+	"amount":56.00,
+	"from":"commwealthchecking",
+	"to":"commwealthtithe",
+	"currency":"AUD",
+	"comments":"Transfer to xx0261 CommBank app"
+},
+{
+	"date":"29/09/2023",
+	"amount":360.00,
+	"from":"commwealthchecking",
+	"to":"psychexpenditure",
+	"currency":"AUD",
+	"comments":"Transfer To Lainie Nicholson CommBank App supervision"
+},
+{
+	"date":"29/09/2023",
+	"amount":9.85,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"IGA NANANGO NANANGO AU Card xx8437"
+},
+{
+	"date":"01/10/2023",
+	"amount":16.40,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"IGA NANANGO NANANGO AU Card xx8437"
+},
+{
+	"date":"02/10/2023",
+	"amount":40.88,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"ALDI STORES - KINGAROY KINGAROY AU"
+},
+{
+	"date":"02/10/2023",
+	"amount":21.00,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"IGA NANANGO NANANGO AU Card xx8429"
+},
+{
+	"date":"03/10/2023",
+	"amount":25.00,
+	"from":"commwealthchecking",
+	"to":"mobilebill",
+	"currency":"AUD",
+	"comments":"MED*ALDIMobile CHATSWOOD AU AUS Card xx8437 Value Date: 29/09/2023"
+},
+{
+	"date":"03/10/2023",
+	"amount":924.02,
+	"from":"esalary",
+	"to":"commwealthchecking",
+	"currency":"AUD",
+	"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 24-30 Sept"
+},
+{
+	"date":"03/10/2023",
+	"amount":321.65,
+	"from":"commwealthchecking",
+	"to":"houserent",
+	"currency":"AUD",
+	"comments":"Direct Debit 382220 FREEMAN ESTATES 140988674"
+},
+{
+	"date":"05/10/2023",
+	"amount":76.16,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"ALDI STORES - KINGAROY KINGAROY AU"
+},
+{
+	"date":"06/10/2023",
+	"amount":5.00,
+	"from":"commwealthchecking",
+	"to":"eentertainment",
+	"currency":"AUD",
+	"comments":"Reds Fish and Chips N NANANGO QL AUS Card xx8437 Value Date: 04/10/2023"
+},
+{
+	"date":"06/10/2023",
+	"amount":180.00,
+	"from":"commwealthchecking",
+	"to":"psychexpenditure",
+	"currency":"AUD",
+	"comments":"Transfer To Lainie Nicholson CommBank App supervision"
+},
+{
+	"date":"06/10/2023",
+	"amount":56.60,
+	"from":"commwealthchecking",
+	"to":"commwealthtithe",
+	"currency":"AUD",
+	"comments":"Transfer to xx0261 CommBank app crosswave tithe"
+},
+{
+	"date":"07/10/2023",
+	"amount":21.06,
+	"from":"commwealthchecking",
+	"to":"capital",
+	"currency":"AUD",
+	"comments":"BUNNINGS 563000 KINGAROY AU Card xx8437"
+},
+{
+	"date":"08/10/2023",
+	"amount":8.10,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"IGA NANANGO NANANGO AU Card xx8437"
+},
+{
+	"date":"08/10/2023",
+	"amount":56.60,
+	"from":"commwealthchecking",
+	"to":"etithe",
+	"currency":"AUD",
+	"comments":"Transfer To nanango cbc CommBank App tithe"
+},
+{
+	"date":"08/10/2023",
+	"amount":1000.00,
+	"from":"commwealthchecking",
+	"to":"commwealthsavings",
+	"currency":"AUD",
+	"comments":"Transfer to xx3121 CommBank app savings"
+},
+{
+	"date":"09/10/2023",
+	"amount":924.02,
+	"from":"esalary",
+	"to":"commwealthchecking",
+	"currency":"AUD",
+	"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 1-7 Oct"
+},
+{
+	"date":"10/10/2023",
+	"amount":27.97,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"BIG W 0279 KINGAROY AU AUS Card xx8437 Value Date: 07/10/2023"
+},
+{
+	"date":"10/10/2023",
+	"amount":3.80,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"WOOLWORTHS 2565 KINGAROY AU AUS Card xx8437 Value Date: 07/10/2023"
+},
+{
+	"date":"10/10/2023",
+	"amount":56.60,
+	"from":"commwealthchecking",
+	"to":"commwealthtithe",
+	"currency":"AUD",
+	"comments":"Transfer to xx0261 CommBank app tithe"
+},
+{
+	"date":"10/10/2023",
+	"amount":321.65,
+	"from":"commwealthchecking",
+	"to":"houserent",
+	"currency":"AUD",
+	"comments":"Direct Debit 382220 FREEMAN ESTATES 141458474"
+},
+{
+	"date":"11/10/2023",
+	"amount":20.85,
+	"from":"commwealthchecking",
+	"to":"eentertainment",
+	"currency":"AUD",
+	"comments":"POTTIQUE PTY LTD QLDQLD AUS Card xx8437 Value Date: 08/10/2023"
+},
+{
+	"date":"11/10/2023",
+	"amount":15.95,
+	"from":"commwealthchecking",
+	"to":"eentertainment",
+	"currency":"AUD",
+	"comments":"POTTIQUE PTY LTD QLDQLD AUS Card xx8437 Value Date: 08/10/2023"
+},
+{
+	"date":"11/10/2023",
+	"amount":66.99,
+	"from":"commwealthchecking",
+	"to":"fuel",
+	"currency":"AUD",
+	"comments":"UNITED PETROLEUM PTY NANANGO AU"
+},
+{
+	"date":"12/10/2023",
+	"amount":50.00,
+	"from":"commwealthchecking",
+	"to":"capital",
+	"currency":"AUD",
+	"comments":"Wdl ATM CBA ATM NANANGO QLD 441899 AUS"
+},
+{
+	"date":"12/10/2023",
+	"amount":55.54,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"COMMERCIAL NANANGO NANANGO QLD AU"
+},
+{
+	"date":"13/10/2023",
+	"amount":180.00,
+	"from":"commwealthchecking",
+	"to":"psychexpenditure",
+	"currency":"AUD",
+	"comments":"Transfer To Lainie Nicholson CommBank App supervision"
+},
+{
+	"date":"14/10/2023",
+	"amount":26.05,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"IGA NANANGO NANANGO AU Card xx8437"
+},
+{
+	"date":"15/10/2023",
+	"amount":1.40,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"IGA NANANGO NANANGO AU Card xx8437"
+},
+{
+	"date":"16/10/2023",
+	"amount":924.02,
+	"from":"esalary",
+	"to":"commwealthchecking",
+	"currency":"AUD",
+	"comments":"Direct Credit 045801 ESSENTIAL HEALTH Wages 8-14 Oct"
+},
+{
+	"date":"16/10/2023",
+	"amount":120.00,
+	"from":"commwealthchecking",
+	"to":"psychexpenditure",
+	"currency":"AUD",
+	"comments":"Transfer To Albert Watt PayID Phone from CommBank App secondary supervision"
+},
+{
+	"date":"17/10/2023",
+	"amount":40.80,
+	"from":"commwealthchecking",
+	"to":"groceries",
+	"currency":"AUD",
+	"comments":"THE SOUTH BURNETT PANTRY KINGAROY QLD AU Card xx8429"
+},
+{
+	"date":"17/10/2023",
+	"amount":321.65,
+	"from":"commwealthchecking",
+	"to":"houserent",
+	"currency":"AUD",
+	"comments":"Direct Debit 382220 FREEMAN ESTATES 141912763"
+},
+{
+	"date":"19/10/2023",
+	"amount":55.44,
+	"from":"commwealthchecking",
+	"to":"internetbill",
+	"currency":"AUD",
+	"comments":"TANGERINE TELECOM SOUTH MELBOUR AU AUS Card xx8437 Value Date: 17/10/2023"
+}
+]
 }

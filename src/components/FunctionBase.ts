@@ -43,7 +43,9 @@ export interface Record {
 }
 
 export interface Balance {
+	"currency": string,
 	"account": string,
+	"accountname": string,
 	"type": string,
 	"amount": number
 }

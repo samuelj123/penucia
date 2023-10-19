@@ -7,6 +7,8 @@
 <table>
 	<tr>
 	<th>Date</th>
+	<th>From Account</th>
+	<th>To Account</th>
 	<th>Currency</th>
 	<th>Amount</th>
 	<th>Comments</th>
@@ -15,6 +17,8 @@
 	{#each data.records as record}
 	<tr>
 		<td>{record.date}</td>	
+		<td>{record.from}</td>	
+		<td>{record.to}</td>	
 		<td>{record.currency}</td>	
 		<td>{record.amount}</td>	
 		<td>{record.comments}</td>	
