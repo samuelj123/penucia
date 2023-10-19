@@ -7,7 +7,3 @@
 <h1>Dashboard</h1>
 <AssetsBudgetWidget data={data}/>
 <BudgetCategories data={data}/>
-<h3>Regular Transactions</h3>
-{#each data.records as record}
-	<p>{record.date} {record.currency} {record.amount} {record.comments}</p>
-{/each}

@@ -5,6 +5,7 @@
 	import GeneralLayout from "./GeneralLayout.svelte";
 	import AccountsLayout from "./AccountsLayout.svelte";
 	import BudgetsLayout from "./BudgetsLayout.svelte";
+	import TransactionsLayout from "./TransactionsLayout.svelte";
 
 	export let data:Data;
 	export let controls:Controls;
@@ -16,6 +17,7 @@
 	const Toggleaccounts = () => toggle = "accounts";
 	const Togglebudgets = () => toggle = "budgets";
 	const Toggledashboard = () => toggle = "dashboard";
+	const Toggletransactions = () => toggle = "transactions";
 
 </script>
 
@@ -23,6 +25,7 @@
 	<button on:click={Toggleaccounts}>Accounts</button>
 	<button on:click={Togglebudgets}>Budgets</button>
 	<button on:click={Toggledashboard}>Dashboard</button>
+	<button on:click={Toggletransactions}>Transactions</button>
 	<a href={controls.rawdata} download="finance.json">Download</a>
 	<button on:click={reset}>Exit</button>
 </sidebar>
@@ -36,6 +39,8 @@
 	<AccountsLayout data={data}/>
 	{:else if toggle === "budgets"} 
 	<BudgetsLayout data={data}/>
+	{:else if toggle === "transactions"} 
+	<TransactionsLayout data={data}/>
 {/if}
 </main>
 
