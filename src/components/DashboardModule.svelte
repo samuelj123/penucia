@@ -15,7 +15,8 @@
 					"comments": "B::"+budget.name
 				});
 			} else {
-				const budgetenddate:Date = new Date(budget.timeperiod.to);
+				var budgetEndDateString = budget.timeperiod.to.replace(/-/g,'/');  // replaces all occurances of "-" with "/")
+				const budgetenddate:Date = new Date(budgetEndDateString);
 				const today = new Date();
 				const recordenddate = budgetenddate>today?today:budgetenddate;
 

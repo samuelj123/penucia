@@ -3,7 +3,7 @@
 	"include": ["src/**/*", "src/node_modules"],
 	"exclude": ["node_modules/*","public/*"],
 	"compilerOptions": {
-		"allowJs": false,
+		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
