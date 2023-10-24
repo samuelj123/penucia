@@ -103,9 +103,17 @@
 		return currencyCalc(income+expenses);
 	}
 
-	export const SevenDaysAgo = (rec:Record) => {
+	export const sevenDaysAgo = (rec:Record) => {
 		let sdago = new Date();
 		sdago.setDate(sdago.getDate() - 7);
 		return sdago <=new Date(rec.date) && new Date(rec.date) <= new Date();
+	}
+
+	export const calcBalTotal = (bal:Balance[]): number => {
+		let total = 0;
+		bal.forEach((bal) => {
+			total = currencyCalc(total +bal.amount);
+		});
+		return total;
 	}
 </script>

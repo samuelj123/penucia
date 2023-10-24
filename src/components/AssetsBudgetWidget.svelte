@@ -4,7 +4,7 @@
 	import {
 		IncomeVsExpenses, 
 		MakeBudgetRecords,
-		SevenDaysAgo,
+		sevenDaysAgo,
 		getBalancesOfAllAccounts,
 	} from "./DashboardModule.svelte";
 	export let data:Data;
@@ -27,13 +27,13 @@
 
 	const CashflowForThisWeek:Balance[] = 
 	getBalancesOfAllAccounts(
-		data.records.filter(rec => SevenDaysAgo(rec)),
+		data.records.filter(rec => sevenDaysAgo(rec)),
 		data.accounts);
 
 	const BudgetedFlowThisWeek:Balance[] = 
 	getBalancesOfAllAccounts(
 			MakeBudgetRecords(data.budgets)
-			.filter(rec => SevenDaysAgo(rec)),
+			.filter(rec => sevenDaysAgo(rec)),
 		data.accounts);
 
 	const commwealthCheckingBal = 
