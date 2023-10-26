@@ -1,0 +1,104 @@
+
+/* {{{1 Defaults */
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+*{
+	font-family: "poppins sans-serif";
+	margin: 0;
+	padding: 0;
+	--primary: #68b0ab;
+	--secondary: #faf3dd;
+	--dark: #573237;
+	--verydark: #273227;
+	--light: eggshell;
+	--prifont: poppins;
+	--secfont: poppins;
+	color: var(--verydark);
+	text-decoration: none;
+	list-style-type:none;
+	font-family: var(--prifont);
+	font-weight: 200;
+	transition: .25s;
+	transition-timing-function: ease;
+}
+
+/* {{{1 Nav */
+nav {
+	display: flex;
+	max-width: calc(100vw - 100px);
+	position: fixed;
+	height: 5em;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	min-width: 30vw;
+	max-width: 30vw;
+}
+
+nav ul:nth-child(2) li {
+	margin-left: auto;
+	margin-right: auto;
+}
+nav ul:nth-child(3) li {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+nav + section {
+	padding-top: 5em;
+}
+/* {{{1 Sections and others  */
+section {
+	width: 90vw;
+	max-width: 1440px;
+	margin: 0 auto;
+	margin-bottom: 10vh;
+
+}
+section.page {
+	max-height: calc(100vh - 5em);
+	height: calc(100vh - 5em);
+}
+
+.card {
+	display: grid;
+	background: white;
+	justify-items: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 1vw;
+	grid-row-gap: 8vh;
+	margin: 0 auto;
+	max-width: 90vw;
+	margin-bottom: 10vh;
+	justify-items: center;
+}
+
+[role="button"] {
+	margin: 0;
+	padding: .75em 1.5em;
+	width: 100%;
+	text-align: center;
+	border: 2px solid var(--secondary);
+}
+/* {{{1 For Smaller Screens */
+@media (max-device-width: 800px) 
+and (min-device-width: 100px) {
+	h1, h2, h3 {
+		font-size: 6em;
+	}
+	.grid {
+		grid-template-columns: 1fr;
+		grid-row-gap: 2vh;
+	}
+	.card {
+		min-width: 70vw;
+	}
+}
+
