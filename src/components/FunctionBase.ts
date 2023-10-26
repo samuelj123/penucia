@@ -47,7 +47,15 @@ export interface Balance {
 	"account": string,
 	"accountname": string,
 	"type": string,
-	"amount": number
+	"amount": number,
+}
+
+export interface AccountBalance {
+	"account":string,
+	"accountname":string,
+	"currency":string,
+	"type":string,
+	"amount":number
 }
 
 export const currencyCalc = (num:number) => {

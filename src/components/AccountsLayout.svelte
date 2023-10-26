@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { MakeBudgetRecords, mergeAccountBalances, getBalancesOfAllAccounts, calcBalTotal } from './DashboardModule.svelte';
-	import type {Data} from './FunctionBase';
+	import type {Balance, Data} from './FunctionBase';
 	import {currencyCalc} from'./FunctionBase';
 	export let data:Data;
 
@@ -9,17 +9,14 @@
 	let allBudgets = getBalancesOfAllAccounts(budgetRecords, data.accounts);
 	let accounts = mergeAccountBalances(allAccounts, allBudgets);
 
-	let accountTotals = {assets: 0, liabilities: 0, income: 0, expenditure: 0};
-	accountTotals.assets = calcBalTotal(allAccounts.filter(acc => acc.type==="asset"));
-	accountTotals.liabilities = calcBalTotal(allAccounts.filter(acc => acc.type==="liability"));
-	accountTotals.income = calcBalTotal(allAccounts.filter(acc => acc.type==="income"));
-	accountTotals.expenditure = calcBalTotal(allAccounts.filter(acc => acc.type==="expense"));
-
-	let budgetTotals = {assets: 0, liabilities: 0, income: 0, expenditure: 0};
-	budgetTotals.assets = calcBalTotal(allBudgets.filter(acc => acc.type==="asset"));
-	budgetTotals.liabilities = calcBalTotal(allBudgets.filter(acc => acc.type==="liability"));
-	budgetTotals.income = calcBalTotal(allBudgets.filter(acc => acc.type==="income"));
-	budgetTotals.expenditure = calcBalTotal(allBudgets.filter(acc => acc.type==="expense"));
+	let getTotals = (accounts:Balance[]) => {
+		let totals = {assets: 0, liabilities: 0, income: 0, expenditure: 0, total:0};
+		totals.assets = calcBalTotal(accounts.filter(acc => acc.type==="asset"));
+		totals.liabilities = calcBalTotal(accounts.filter(acc => acc.type==="liability"));
+		totals.income = calcBalTotal(accounts.filter(acc => acc.type==="income"));
+		totals.expenditure = calcBalTotal(accounts.filter(acc => acc.type==="expense"));
+		return totals;
+	}
 
 </script>
 
@@ -32,23 +29,28 @@
 	</tr>
 	<tr>
 		<td>Assets</td>
-		<td>{ accountTotals.assets }</td>
-		<td>{ budgetTotals.assets }</td>
+		<td>{ getTotals(allAccounts).assets }</td>
+		<td>{ getTotals(allBudgets).assets }</td>
 	</tr>
 	<tr>
 		<td>Liabilities</td>
-		<td>{ accountTotals.liabilities }</td>
-		<td>{ budgetTotals.liabilities }</td>
+		<td>{ getTotals(allAccounts).liabilities }</td>
+		<td>{ getTotals(allBudgets).liabilities }</td>
 	</tr>
 	<tr>
 		<td>Income</td>
-		<td>{ accountTotals.income }</td>
-		<td>{ budgetTotals.income }</td>
+		<td>{ getTotals(allAccounts).income }</td>
+		<td>{ getTotals(allBudgets).income }</td>
 	</tr>
 	<tr>
 		<td>Expenditure</td>
-		<td>{ accountTotals.expenditure }</td>
-		<td>{ budgetTotals.expenditure }</td>
+		<td>{ getTotals(allAccounts).expenditure }</td>
+		<td>{ getTotals(allBudgets).expenditure }</td>
+	</tr>
+	<tr>
+		<td><b>Totals</b></td>
+		<td><b>{ currencyCalc(getTotals(allAccounts).assets + getTotals(allAccounts).liabilities + getTotals(allAccounts).income + getTotals(allAccounts).expenditure) }</b></td>
+		<td><b>{ currencyCalc(getTotals(allBudgets).assets + getTotals(allBudgets).liabilities + getTotals(allBudgets).income + getTotals(allBudgets).expenditure) }</b></td>
 	</tr>
 </table>
 <table>

@@ -13,8 +13,6 @@ and display them in a visual manner, for the following goals
 2. Commodity Pricing
 	1. To be thought about later...
 
-
-	
 ## Developers' Setup
 To get this set up on your computer, do 3 things:
 
@@ -32,10 +30,10 @@ npm run dev -- --open
 
 
 # brainstorming area 
-## Things needed for Dashboard
-1. Bank Account numbers: For a sanity-check
-2. Amount left to spend this week
-3. Amount unused from different piles overall
-4. Future expenses(budget records)
+1. Bank Account numbers: For a sanity-check (Can't remember what this was)
+# Features needed
+1. Dates in modeldata.json should be fixed
+2. Make the input plan: It should be possible to edit every aspect of the json file 
+3. CSS Design needs to happen 
+4. More widgets (at a glance types)
 
-# Budget filter off frequency once first

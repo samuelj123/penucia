@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	import type { Account, Record, Budget, Balance } from "./FunctionBase";
+	import type { Account, Record, Budget, Balance, AccountBalance } from "./FunctionBase";
 	import { currencyCalc } from "./FunctionBase";
 
 	export const MakeBudgetRecords = (budgets:Budget[]):Record[] => {
@@ -50,7 +50,7 @@
 		return mergedObjects;
 	}
 
-	export const getBalancesOfAllAccounts = (records:Record[],accounts:Account[]) => {
+	export const getBalancesOfAllAccounts = (records:Record[],accounts:Account[]):Balance[] => {
 		let returnobject:Balance[] = [];
 		accounts.forEach(( asset ) => {
 			let counter = 0;
