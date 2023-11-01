@@ -32,8 +32,8 @@ npm run dev -- --open
 # brainstorming area 
 1. Bank Account numbers: For a sanity-check (Can't remember what this was)
 # Features needed
-1. Dates in modeldata.json should be fixed
-2. Make the input plan: It should be possible to edit every aspect of the json file 
+## Display
 3. CSS Design needs to happen 
 4. More widgets (at a glance types)
+2. Make the input plan: It should be possible to edit every aspect of the json file 
 
