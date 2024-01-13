@@ -1,75 +1,39 @@
 <script lang="ts">
-	import { createEventDispatcher } from "svelte";
-	import type { Controls, Data } from "./FunctionBase";
-	import { isBudgetSensible, checkIfBalanced, MakeBudgetRecords } from "./DashboardModule.svelte";
-	import GeneralLayout from "./GeneralLayout.svelte";
-	import AccountsLayout from "./AccountsLayout.svelte";
-	import BudgetsLayout from "./BudgetsLayout.svelte";
-	import TransactionsLayout from "./TransactionsLayout.svelte";
-
-	export let data:Data;
-	export let controls:Controls;
-
-	const dispatch = createEventDispatcher();
-	const reset = () => dispatch('call-reset');
-
-	let toggle = "dashboard";
-	const Toggleaccounts = () => toggle = "accounts";
-	const Togglebudgets = () => toggle = "budgets";
-	const Toggledashboard = () => toggle = "dashboard";
-	const Toggletransactions = () => toggle = "transactions";
-
 </script>
 
-<sidebar>
-	<button on:click={Toggleaccounts}>Accounts</button>
-	<button on:click={Togglebudgets}>Budgets</button>
-	<button on:click={Toggledashboard}>Dashboard</button>
-	<button on:click={Toggletransactions}>Transactions</button>
-	<a href={controls.rawdata} download="finance.json">Download</a>
-	<button on:click={reset}>Exit</button>
-</sidebar>
+<div class="container">
+  <div class="circle">  <h1>321.67 AUD</h1>
+    <h2>Next 5 Days</h2>
+    <div id="svg"></div>
+  </div>
+</div>
 
-<main>
-<h3>If Balanced {checkIfBalanced(data.records, data.accounts)}</h3>
-<h3>Is Budget Sensible {isBudgetSensible(MakeBudgetRecords(data.budgets), data.accounts)}</h3>
-{#if toggle==="dashboard"}
-	<GeneralLayout data={data} />
-	{:else if toggle === "accounts"} 
-	<AccountsLayout data={data}/>
-	{:else if toggle === "budgets"} 
-	<BudgetsLayout data={data}/>
-	{:else if toggle === "transactions"} 
-	<TransactionsLayout data={data}/>
-{/if}
-</main>
+<style>
+  .container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    background-color: var(--light1);
+    align-items: center;
+  }
+.circle {
+  font-size: 2em;
+  border: none;
+  background: none;
+  height: 80vw;
+  width: 80vw;
+  background-image: linear-gradient(to bottom right, var(--light3), var(--light2));
+  box-shadow: 2px 2px 10px var(--grey2), -1px -1px 15px var(--light0);
+  color: var(--grey0);
+  padding: .5em;
+  border-radius: 50%;
+}
+h2 {
+  font-size: 3em;
+}
+</style>
 
-<!-- <style> -->
-<!-- 	sidebar { -->
-<!-- 		min-height: 100vh; -->
-<!-- 		position: fixed; -->
-<!-- 		top: 0; -->
-<!-- 		left: 0; -->
-<!-- 		width: clamp(20px, 5vw, 50px); -->
-<!-- 		border: 1px solid red; -->
-<!-- 	} -->
-<!-- 	main { -->
-<!-- 		margin-left: clamp(25px, 6vw, 60px); -->
-<!-- 	} -->
-<!---->
-<!-- 	sidebar button, sidebar a { -->
-<!-- 		justify-self: center; -->
-<!-- 		width: clamp( 15px, 4.5vw, 40px); -->
-<!-- 		height: clamp( 15px, 4.5vw, 40px); -->
-<!-- 		text-decoration: none; -->
-<!-- 		display: block; -->
-<!-- 		border: none; -->
-<!-- 		font-family: arial; -->
-<!-- 		font-size: 1em; -->
-<!-- 		color: black; -->
-<!-- 		padding: 0; -->
-<!-- 		margin: 0; -->
-<!-- 		border: 1px solid red; -->
-<!-- 		background: none; -->
-<!-- 	} -->
-<!-- </style> -->
+
+
+

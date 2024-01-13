@@ -1,18 +1,29 @@
-
 /* {{{1 Defaults */
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One&display=swap");
 *{
-	font-family: "poppins sans-serif";
+	font-family: "Poiret One sans-serif";
 	margin: 0;
 	padding: 0;
-	--primary: #68b0ab;
-	--secondary: #faf3dd;
-	--dark: #573237;
-	--verydark: #273227;
-	--light: eggshell;
-	--prifont: poppins;
-	--secfont: poppins;
-	color: var(--verydark);
+	--prifont: Poiret One;
+	--secfont: Poiret One;
+	--green-light: #6fe39d;
+	--green: #28cd6a;
+	--blue-light: #037bbf;
+	--blue: #2b596c;
+	--pink-light: #f9849f;
+	--pink: #f9426c;
+	--light0: #fff;
+	--light1: #f9fefe;
+	--light2: #f4fdfe;
+	--light3: #b9d3f444;
+	--grey0: #031927;
+	--grey1: #273227;
+	--grey2: #b9def499;
+	--grey3: #000;
+	--grey4: #000;
+	--grey5: #000;
+
+	color: var(--grey1);
 	text-decoration: none;
 	list-style-type:none;
 	font-family: var(--prifont);
@@ -85,7 +96,7 @@ section.page {
 	padding: .75em 1.5em;
 	width: 100%;
 	text-align: center;
-	border: 2px solid var(--secondary);
+	border: 2px solid var(--blue);
 }
 /* {{{1 For Smaller Screens */
 @media (max-device-width: 800px) 
@@ -101,4 +112,32 @@ and (min-device-width: 100px) {
 		min-width: 70vw;
 	}
 }
+/* {{{1 Neomorpphism */
+
+.container {
+	display: grid;
+	margin: 0;
+	padding: 0;
+	align-items: center; 
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--light1);
+}
+h1 {
+	font-size: 3em;
+}
+.circle {
+	font-size: 2em;
+	border: none;
+	background: none;
+	height: 80vw;
+	width: 80vw;
+	background-image: linear-gradient(to bottom right, var(--light3), var(--light2));
+	box-shadow: 2px 2px 10px var(--grey2), -1px -1px 15px var(--light0);
+	color: var(--grey0);
+	padding: .5em;
+	border-radius: 50%;
+}
+
 
